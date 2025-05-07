@@ -1,15 +1,12 @@
-import { Text, View } from "react-native";
+import MainNavigator from "@/components/MainNavigator";
+import { NavigationContainer, NavigationIndependentTree } from "@react-navigation/native";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <NavigationIndependentTree>
+      <NavigationContainer>
+        <MainNavigator/>
+      </NavigationContainer>
+    </NavigationIndependentTree>
   );
 }
