@@ -1,6 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import Constants from "expo-constants";
-import { addAssistantMessage, getConversation } from "./conversatioonHistory";
+import { addAssistantMessage, getConversation } from "./conversationHistory";
 
 const ANTHROPIC_API_KEY = Constants.expoConfig?.extra?.anthropicApiKey;
 

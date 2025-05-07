@@ -1,7 +1,7 @@
 import KeyboardAvoidingViewContainer from "@/components/KeyboardAvoidingViewContainer";
 import colors from "@/constants/Colors";
 import { makeChatRequest } from "@/utils/anthropic";
-import { addUserMessage } from "@/utils/conversatioonHistory";
+import { addUserMessage } from "@/utils/conversationHistory";
 import { Feather } from "@expo/vector-icons";
 import React, { useCallback, useState } from "react";
 import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
