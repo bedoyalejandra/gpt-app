@@ -18,13 +18,8 @@ export const makeChatRequest = async () => {
     const contentBlock = response.content[0];
     if (contentBlock.type === "text") {
       let text = contentBlock.text;
-      // text = text.replace(/(\r\n|\n|\r)/gm, "");
+      text = text.replace(/(\r\n|\n|\r)/gm, " ");
       addAssistantMessage(text);
-      getConversation().forEach((message) =>
-        console.log(
-          "role: " + message.role + "message: " + message.content[0].text
-        )
-      );
       return;
     }
   }
